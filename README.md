@@ -1,1 +1,1 @@
-# GO-MR
+Control + Shift + m
