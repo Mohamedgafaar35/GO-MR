@@ -55,3 +55,10 @@ self.memory = self.Memory()
 if __name__ == "__main__":
  # 
     computer = BigComputer()
+# 
+    instructions = [
+        computer.Instruction(computer.Opcode.ADD, 10),
+        computer.Instruction(computer.Opcode.SUB, 5),
+        computer.Instruction(computer.Opcode.JMP, 2),
+    ]
+    computer.load_instructions(instructions)
