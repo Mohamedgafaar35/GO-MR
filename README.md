@@ -62,3 +62,5 @@ if __name__ == "__main__":
         computer.Instruction(computer.Opcode.JMP, 2),
     ]
     computer.load_instructions(instructions)
+# 
+    computer.execute_instructions()
