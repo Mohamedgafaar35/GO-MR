@@ -27,3 +27,4 @@
             "C": self.Register("C"),
             "PC": self.Register("PC", 0),
         }
+self.memory = self.Memory()
