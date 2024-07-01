@@ -50,3 +50,5 @@ self.memory = self.Memory()
                 self.registers["PC"].value = instruction.operand
             else:
                 raise ValueError("تعليمة غير صالحة.")
+ #
+ self.registers["PC"].value += 1
