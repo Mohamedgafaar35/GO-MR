@@ -53,3 +53,5 @@ self.memory = self.Memory()
                 break
 #
 if __name__ == "__main__":
+ # 
+    computer = BigComputer()
