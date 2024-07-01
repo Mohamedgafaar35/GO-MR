@@ -1,9 +1,6 @@
 ```python
-#
- from enum import Enum
-
-#
- class SimpleComputer:
+# from enum import Enum
+# class SimpleComputer:
     """
     #  class Register:
         def __init__(self, name, value=0):
