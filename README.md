@@ -34,3 +34,6 @@ self.memory = self.Memory()
     def load_instructions(self, instructions):
         for instruction in instructions:
             self.memory.data[instruction.PC] = instruction
+   # 
+    def execute_instructions(self):
+        while True:
