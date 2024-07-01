@@ -27,3 +27,4 @@ class SimpleComputer:
         ADD = "ADD"
         SUB = "SUB"
         JMP = "JMP"
+   def __init__(self):
