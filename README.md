@@ -1,7 +1,9 @@
 ```python
-# from enum import Enum
+#
+ from enum import Enum
 
-# class SimpleComputer:
+#
+ class SimpleComputer:
     """
  
 
@@ -37,3 +39,5 @@ self.memory = self.Memory()
    # 
     def execute_instructions(self):
         while True:
+#
+            instruction = self.memory.data[self.registers["PC"].value]
