@@ -16,12 +16,10 @@
         JMP = "JMP"
    def __init__(self):
      # 
-        self.registers = {
-            "A": self.Register("A"),
+        self.registers = {   "A": self.Register("A"),
             "B": self.Register("B"),
             "C": self.Register("C"),
-            "PC": self.Register("PC", 0),
-        }
+            "PC": self.Register("PC", 0), }
 self.memory = self.Memory()
         # 
         self.instructions = []
@@ -53,11 +51,9 @@ if __name__ == "__main__":
  # 
     computer = BigComputer()
 # 
-    instructions = [
-        computer.Instruction(computer.Opcode.ADD, 10),
+    instructions = [   computer.Instruction(computer.Opcode.ADD, 10),
         computer.Instruction(computer.Opcode.SUB, 5),
-        computer.Instruction(computer.Opcode.JMP, 2),
-    ]
+        computer.Instruction(computer.Opcode.JMP, 2), ]
     computer.load_instructions(instructions)
 # 
     computer.execute_instructions()
