@@ -28,6 +28,9 @@
             "PC": self.Register("PC", 0),
         }
 self.memory = self.Memory()
-
         # 
         self.instructions = []
+    #
+    def load_instructions(self, instructions):
+        for instruction in instructions:
+            self.memory.data[instruction.PC] = instruction
