@@ -64,3 +64,8 @@ if __name__ == "__main__":
     computer.load_instructions(instructions)
 # 
     computer.execute_instructions()
+# 
+    print("محتوى السجلات:")
+    for register in computer.registers.values():
+        print(f"{register.name}: {register.value}")
+```
