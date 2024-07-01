@@ -49,6 +49,9 @@ self.memory = self.Memory()
             elif instruction.opcode == self.Opcode.JMP:
                 self.registers["PC"].value = instruction.operand
             else:
-                raise ValueError("تعليمة غير صالحة.")
+                raise ValueError(" ")
  #
  self.registers["PC"].value += 1
+# 
+            if self.registers["PC"].value >= self.memory.size:
+                break
