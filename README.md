@@ -41,3 +41,12 @@ self.memory = self.Memory()
         while True:
 #
             instruction = self.memory.data[self.registers["PC"].value]
+#
+            if instruction.opcode == self.Opcode.ADD:
+                self.registers["A"].value += instruction.operand
+            elif instruction.opcode == self.Opcode.SUB:
+                self.registers["A"].value -= instruction.operand
+            elif instruction.opcode == self.Opcode.JMP:
+                self.registers["PC"].value = instruction.operand
+            else:
+                raise ValueError("تعليمة غير صالحة.")
