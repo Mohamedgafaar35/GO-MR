@@ -5,18 +5,14 @@
 #
  class SimpleComputer:
     """
- 
-
     #  class Register:
         def __init__(self, name, value=0):
             self.name = name
             self.value = value
-
     #  class Memory:
         def __init__(self, size=100):
             self.size = size
     self.data = [0] * size
-
     # class Opcode(Enum):
         ADD = "ADD"
         SUB = "SUB"
@@ -55,3 +51,5 @@ self.memory = self.Memory()
 # 
             if self.registers["PC"].value >= self.memory.size:
                 break
+#
+if __name__ == "__main__":
